@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Comparisons</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,114 +11,117 @@
         body {
             font-family: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
             line-height: 1.6;
-            background-color: #D2691E; /* Cinnamon Background */
+            background-color: #D2691E;
             color: #333;
             margin: 0;
-            padding: 20px;
+            padding: 10px;
         }
         .container {
-            max-width: 900px;
+            width: 100%;
             margin: 0 auto;
-            background-color: #F5F5DC; /* Beige Inner Background */
-            padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            background-color: #F5F5DC;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         }
         header {
             text-align: center;
             border-bottom: 2px solid #dcd0b8;
-            padding-bottom: 1rem;
-            margin-bottom: 2rem;
+            padding-bottom: 0.8rem;
+            margin-bottom: 1.5rem;
         }
         h1, h2 {
             font-family: 'Caveat', cursive;
+            word-wrap: break-word;
         }
         h1 {
             color: #4a2c0f;
             margin: 0;
-            font-size: 3.5rem;
+            font-size: 2.2rem;
         }
         header p {
             color: #6b4f35;
-            font-size: 1.75rem; /* Changed from 1.1rem to half of 3.5rem */
+            font-size: 1.1rem;
             margin: 0.5rem 0;
         }
         .exercise-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 2rem;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
         }
         .exercise-card {
             background-color: #ffffff;
             border: 1px solid #e0e0e0;
-            border-radius: 8px;
-            padding: 1.5rem;
+            border-radius: 6px;
+            padding: 1rem;
             display: flex;
             flex-direction: column;
             transition: box-shadow 0.3s ease;
         }
         .exercise-card:hover {
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
         .exercise-card h2 {
-            font-size: 2.2rem;
+            font-size: 1.5rem;
             color: #5a3a1b;
             margin-top: 0;
             line-height: 1.2;
         }
         .exercise-card img {
             width: 100%;
-            height: 100px;
+            height: auto;
+            max-height: 120px;
             object-fit: contain;
-            border-radius: 6px;
-            margin-bottom: 1rem;
+            border-radius: 4px;
+            margin-bottom: 0.8rem;
             background-color: #ffffff;
         }
         textarea {
             width: 100%;
             height: 80px;
-            padding: 10px;
+            padding: 8px;
             border: 1px solid #ccc;
             border-radius: 4px;
             font-family: inherit;
-            font-size: 1rem;
+            font-size: 0.9rem;
             resize: vertical;
-            margin-bottom: 1rem;
+            margin-bottom: 0.8rem;
             box-sizing: border-box;
             background-color: #fff;
             color: #333;
         }
         button {
-            padding: 10px 15px;
+            padding: 8px 12px;
             border: none;
-            background-color: #8B4513; /* SaddleBrown to match theme */
+            background-color: #8B4513;
             color: white;
             border-radius: 4px;
             cursor: pointer;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             font-weight: bold;
             transition: background-color 0.3s ease;
             align-self: flex-start;
         }
         button:hover {
-            background-color: #A0522D; /* Sienna */
+            background-color: #A0522D;
         }
         .sample-answer {
-            background-color: #faf0e6; /* Linen */
-            border-left: 4px solid #D2691E;
-            padding: 12px;
-            margin-top: 1rem;
-            border-radius: 4px;
+            background-color: #faf0e6;
+            border-left: 3px solid #D2691E;
+            padding: 10px;
+            margin-top: 0.8rem;
+            border-radius: 3px;
             display: none;
             font-style: italic;
+            font-size: 0.9rem;
         }
         footer {
             text-align: center;
-            margin-top: 3rem;
-            padding-top: 1rem;
-            border-top: 2px solid #dcd0b8;
+            margin-top: 2rem;
+            padding-top: 0.8rem;
+            border-top: 1px solid #dcd0b8;
             color: #6b4f35;
-            font-size: 0.9rem;
+            font-size: 0.8rem;
         }
     </style>
 </head>
@@ -126,9 +129,9 @@
 
     <div class="container">
         <header>
-            <h1>Comparisons<h1>
-             <h2><p>Use your imagination, the pictures, and the word(s) to make your own comparisons.</p></h2>
-             <h2><p><i>Devised by Panagiotis Domvros, English and Drama Teacher.</i></p></h2>
+            <h1>Comparisons</h1>
+            <p>Use your imagination, the pictures, and the word(s) to make your own comparisons.</p>
+            <p><i>Devised by Panagiotis Domvros, English and Drama Teacher.</i></p>
         </header>
 
         <main class="exercise-grid">
@@ -136,7 +139,7 @@
             <div class="exercise-card">
                 <h2>1. Winter</h2>
                 <img src="1.jpg" alt="Winter Scene">
-                <textarea></textarea>
+                <textarea placeholder="Write your comparison here..."></textarea>
                 <button onclick="toggleAnswer(this)">Show Example</button>
                 <div class="sample-answer">Example: Winter in the mountains is <strong>more beautiful</strong> than winter in the city.</div>
             </div>
@@ -144,7 +147,7 @@
             <div class="exercise-card">
                 <h2>2. A Turtle - Rabbit</h2>
                 <img src="2.jpg" alt="A turtle and a rabbit">
-                <textarea></textarea>
+                <textarea placeholder="Write your comparison here..."></textarea>
                 <button onclick="toggleAnswer(this)">Show Example</button>
                 <div class="sample-answer">Example: The turtle is <strong>slower</strong> than the rabbit, but the rabbit is <strong>more arrogant</strong>.</div>
             </div>
@@ -152,7 +155,7 @@
             <div class="exercise-card">
                 <h2>3. Difficult</h2>
                 <img src="3.jpg" alt="Difficult math problem on a chalkboard">
-                <textarea></textarea>
+                <textarea placeholder="Write your comparison here..."></textarea>
                 <button onclick="toggleAnswer(this)">Show Example</button>
                 <div class="sample-answer">Example: This is the <strong>most difficult</strong> exam I have ever taken.</div>
             </div>
@@ -160,7 +163,7 @@
             <div class="exercise-card">
                 <h2>4. Your Christmas Tree</h2>
                 <img src="4.jpg" alt="A decorated Christmas tree">
-                <textarea></textarea>
+                <textarea placeholder="Write your comparison here..."></textarea>
                 <button onclick="toggleAnswer(this)">Show Example</button>
                 <div class="sample-answer">Example: Your Christmas tree is <strong>taller</strong> than ours this year.</div>
             </div>
@@ -168,7 +171,7 @@
             <div class="exercise-card">
                 <h2>5. Expensive</h2>
                 <img src="5.jpg" alt="An expensive sports car">
-                <textarea></textarea>
+                <textarea placeholder="Write your comparison here..."></textarea>
                 <button onclick="toggleAnswer(this)">Show Example</button>
                 <div class="sample-answer">Example: This is the <strong>most expensive</strong> watch in the entire store.</div>
             </div>
@@ -176,7 +179,7 @@
             <div class="exercise-card">
                 <h2>6. Summer</h2>
                 <img src="6.jpg" alt="A sunny beach in summer">
-                <textarea></textarea>
+                <textarea placeholder="Write your comparison here..."></textarea>
                 <button onclick="toggleAnswer(this)">Show Example</button>
                 <div class="sample-answer">Example: For me, summer is the <strong>best</strong> season for vacation.</div>
             </div>
@@ -184,7 +187,7 @@
             <div class="exercise-card">
                 <h2>7. Plane</h2>
                 <img src="7.jpg" alt="An airplane in the sky">
-                <textarea></textarea>
+                <textarea placeholder="Write your comparison here..."></textarea>
                 <button onclick="toggleAnswer(this)">Show Example</button>
                 <div class="sample-answer">Example: The new airplane is <strong>more spacious</strong> than the older model.</div>
             </div>
@@ -192,7 +195,7 @@
             <div class="exercise-card">
                 <h2>8. My House</h2>
                 <img src="8.jpg" alt="A modern house">
-                <textarea></textarea>
+                <textarea placeholder="Write your comparison here..."></textarea>
                 <button onclick="toggleAnswer(this)">Show Example</button>
                 <div class="sample-answer">Example: My house is the <strong>most comfortable</strong> place in the world.</div>
             </div>
@@ -200,7 +203,7 @@
             <div class="exercise-card">
                 <h2>9. Sally</h2>
                 <img src="9.jpg" alt="Portrait of a young woman">
-                <textarea></textarea>
+                <textarea placeholder="Write your comparison here..."></textarea>
                 <button onclick="toggleAnswer(this)">Show Example</button>
                 <div class="sample-answer">Example: Sally is the <strong>most intelligent</strong> student in her class.</div>
             </div>
@@ -208,7 +211,7 @@
             <div class="exercise-card">
                 <h2>10. Melisa</h2>
                 <img src="10.jpg" alt="Portrait of a person">
-                <textarea></textarea>
+                <textarea placeholder="Write your comparison here..."></textarea>
                 <button onclick="toggleAnswer(this)">Show Example</button>
                 <div class="sample-answer">Example: Melisa has a <strong>friendlier</strong> smile than anyone I know.</div>
             </div>
@@ -216,7 +219,7 @@
             <div class="exercise-card">
                 <h2>11. Reading a book</h2>
                 <img src="11.jpg" alt="A person reading a book">
-                <textarea></textarea>
+                <textarea placeholder="Write your comparison here..."></textarea>
                 <button onclick="toggleAnswer(this)">Show Example</button>
                 <div class="sample-answer">Example: Reading a book is <strong>more interesting</strong> than playing video games.</div>
             </div>
@@ -224,7 +227,7 @@
             <div class="exercise-card">
                 <h2>12. Tom's Exam</h2>
                 <img src="12.jpg" alt="A person looking at an exam paper">
-                <textarea></textarea>
+                <textarea placeholder="Write your comparison here..."></textarea>
                 <button onclick="toggleAnswer(this)">Show Example</button>
                 <div class="sample-answer">Example: Tom's exam result was <strong>better</strong> than he expected.</div>
             </div>
@@ -232,7 +235,7 @@
             <div class="exercise-card">
                 <h2>13. My Cat</h2>
                 <img src="13.jpg" alt="A cat resting on a chair">
-                <textarea></textarea>
+                <textarea placeholder="Write your comparison here..."></textarea>
                 <button onclick="toggleAnswer(this)">Show Example</button>
                 <div class="sample-answer">Example: My cat is the <strong>fluffiest</strong> cat in the neighborhood.</div>
             </div>
@@ -240,7 +243,7 @@
             <div class="exercise-card">
                 <h2>14. Short</h2>
                 <img src="14.jpg" alt="Two people, one short and one tall">
-                <textarea></textarea>
+                <textarea placeholder="Write your comparison here..."></textarea>
                 <button onclick="toggleAnswer(this)">Show Example</button>
                 <div class="sample-answer">Example: This pencil is <strong>shorter</strong> than that one.</div>
             </div>
